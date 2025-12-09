@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Современный сайт</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #eef2f5;
+        }
+
+        /* === ШАПКА === */
+        header {
+            background: #3f51b5;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        /* === ОСНОВНОЙ БЛОК (Hero section) === */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            color: #333;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #555;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .btn {
+            background: #3f51b5;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #303f9f;
+        }
+
+        /* === КАРТОЧКИ === */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            flex: 1;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        }
+
+        /* === ПОДВАЛ === */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #3f51b5;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Мой сайт</div>
+    <nav>
+        <a href="https://fruptup.ramp">Главная</a>
+        <a href="https://fruptup.ramp">О нас</a>
+        <a href="https://fruptup.ramp">Контакты</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Добро пожаловать на современный сайт</h1>
+    <p>Привет, это мой первый сайт!.</p>
+    <a class="btn" href="#">Узнать больше</a>
+</div>
+
+<div class="container">
+    <div class="cards">
+        <div class="card">
+            <h3>Блок 1</h3>
+            <p>в розроботке.</p>
+        </div>
+        <div class="card">
+            <h3>Блок 2</h3>
+            <p>в розроботке.</p>
+        </div>
+        <div class="card">
+            <h3>Блок 3</h3>
+            <p>в розроботке.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025-2025 | Мой современный сайт
+</footer>
+
+</body>
+</html>
